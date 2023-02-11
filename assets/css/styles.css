@@ -1,0 +1,145 @@
+:root {
+    --highlight-color: #4169e1;
+    --purple-color: #7f38c2;
+    --white-color: #fff;
+    --black-color: #000;
+    --lighter-gray-color: #dbdbdb;
+    --light-gray-color: #b3b3b3;
+    --gray-color: #818080;
+    --darker-gray-color: #202020;
+    font-size: 6.25%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20rem;
+}
+
+/* --- */
+
+button {
+    border: none;
+    transition: .25s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--darker-gray-color);
+    color: var(--white-color);
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-background {
+    background-color: var(--white-color);
+}
+
+.gray-background {
+    background-color: var(--lighter-gray-color);
+}
+
+/* --- */
+
+.main-container {
+    height: 100vh;
+    background-color: var(--black-color);
+}
+
+#calculator-box {
+    width: 320rem;
+    height: 480rem;
+    flex-direction: column;
+    background-color: var(--light-gray-color);
+}
+
+#operations-display {
+    flex: 1 1 30%;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    white-space: nowrap;
+}
+
+#keyboard {
+    flex: 1 1 70%;
+    gap: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 5rem 5rem 5rem;
+}
+
+#result-btn {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: var(--highlight-color);
+    transition: .25s ease-in-out;
+}
+
+#result-btn:hover {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+}
+
+#log {
+    position: absolute;
+    bottom: 80rem;
+    left: 22.5rem;
+    font-size: 20rem;
+    padding-right: 20rem;
+    color: var(--gray-color);
+}
+
+#expression,
+#result {
+    position: absolute;
+    bottom: 20rem;
+    left: 20rem;
+    font-size: 40rem;
+    padding-right: 20rem;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 45rem 0;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: var(--gray-color);
+    transition: 0.1s ease-in-out;
+}
+
+.footer-container a:hover {
+    color: var(--highlight-color);
+}
+
+@media (max-width: 520px) {
+    * {
+        font-size: 17.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    * {
+        font-size: 15rem;
+    }
+
+    #calculator-box {
+        width: 300rem;
+        min-height: 460rem;
+    }
+}
+
+@media (max-width: 420px) {
+    #calculator-box {
+        width: 260rem;
+        min-height: 420rem;
+    }
+}
