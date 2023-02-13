@@ -61,7 +61,7 @@ resultBtn.addEventListener("click", () => {
     const minorOperatorsIndexes = getOperatorsIndexes(expressionContent, '-', '+');
     let total = solveExpression(expressionContent, minorOperatorsIndexes);
 
-    if (total.length > 10) {
+    if (total.length > 20) {
         total = parseFloat(total).toExponential(2);
     }
     
