@@ -19,4 +19,4 @@ The project originates from this free course on Youtube:
 
 <br>
 
-Instead of just copying what would be instructed, I analyzed the page final result and, in order to reproduce it, developed the project by myself.
+Instead of just copying what would be instructed, I analyzed the final result and, in order to reproduce it, developed the project by myself.
